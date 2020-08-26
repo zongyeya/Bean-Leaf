@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: "
+                    android:textSize="25sp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/addshop_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Dong Cha"
+                    android:textSize="20sp">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address: "
+                    android:textSize="25sp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/addshop_shop_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="935 W 30th St"
+                    android:textSize="20sp">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hours: "
+                    android:textSize="25sp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/addshop_shop_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="M-S 10:00 - 12:00"
+                    android:textSize="20sp">
+                </EditText>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addShop_currentItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/addshop_add_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:layout_gravity="center"
+                android:text="Add Item">
+            </Button>
+            
+            <ImageView
+                android:id="@+id/addshop_cafe_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/matcha_latte">
+            </ImageView>
+            
+            <Button
+                android:id="@+id/addshop_add_cafe_images"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:layout_gravity="center"
+                android:text="Upload Cafe Images">
+            </Button>
+
+            <ImageView
+                android:id="@+id/addshop_reg_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/matcha_latte">
+            </ImageView>
+
+            <Button
+                android:id="@+id/addshop_add_registration_form_image"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:layout_gravity="center"
+                android:text="Upload Registration Form">
+            </Button>
+
+            <Button
+                android:id="@+id/addshop_register_cafe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Register Cafe"
+                android:layout_marginBottom="30dp">
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

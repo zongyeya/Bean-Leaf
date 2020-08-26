@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: "
+                    android:textSize="25sp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/additemexisting_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Green Tea"
+                    android:textSize="20sp">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price: "
+                    android:textSize="25sp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/additemexisting_item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="4.25"
+                    android:textSize="20sp">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caffeine (mg): "
+                    android:textSize="25sp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/additemexisting_item_caffeine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="100"
+                    android:textSize="20sp">
+                </EditText>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/additemexisting_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/matcha_latte">
+            </ImageView>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Image Title: "-->
+<!--                    android:textSize="25sp">-->
+<!--                </TextView>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/additemexisting_image_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Honey Green Milk Tea"-->
+<!--                    android:textSize="20sp">-->
+<!--                </EditText>-->
+
+<!--            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/additemexisting_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:layout_gravity="center"
+                android:text="Add Image">
+            </Button>
+
+            <Button
+                android:id="@+id/additemexisting_add_item"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:layout_gravity="center"
+                android:layout_marginTop="123dp"
+                android:layout_marginBottom="20dp">
+            </Button>
+
+
+        </LinearLayout>
+
+            <View
+                android:id="@+id/newGreyProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </View>
+
+            <ProgressBar
+                android:id="@+id/addItemExistingProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

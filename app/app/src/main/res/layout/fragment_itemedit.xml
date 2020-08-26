@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/orderItemItemImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/honey_green_milk_tea">
+            </ImageView>
+            
+            <Button
+                android:id="@+id/edititem_addimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="30dp"
+                android:layout_gravity="center"
+                android:text="Change Image">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/merchantitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Green Tea"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="30dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/merchantitem_title_edit"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Green Tea"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="30dp">
+            </EditText>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/merchant_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price:"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/merchantitem_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$4.25"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/merchantitem_price_edit"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$4.25"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp">
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/merchant_caffeine_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caffeine:"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/merchantitem_caffeine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="255 mg"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/merchantitem_caffeine_edit"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="255 mg"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp">
+                </EditText>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnEditItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/ic_edit_white_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnDoneItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/ic_done_white_24dp" />
+
+    </RelativeLayout>
+</LinearLayout>

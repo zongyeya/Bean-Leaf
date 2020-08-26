@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "161928800595",
+    "firebase_url": "https://syp-project-2e8e6.firebaseio.com",
+    "project_id": "syp-project-2e8e6",
+    "storage_bucket": "syp-project-2e8e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161928800595:android:6497ea7d49f4e5efce99a6",
+        "android_client_info": {
+          "package_name": "com.syp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161928800595-c0ldk91ataddah3tm70c95vfqh5t8auk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syp",
+            "certificate_hash": "c272b44bfacb3c169eed785d1efde6d07dcf0ff7"
+          }
+        },
+        {
+          "client_id": "161928800595-u0engf3eb9fo31u3ei9jcaqflo6vbe5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syp",
+            "certificate_hash": "029b6258d6bf8a5bc59e8eb585eed5caee968b24"
+          }
+        },
+        {
+          "client_id": "161928800595-4dcvdfpeljh01q44gbpcfir6gpqtb90m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.syp",
+            "certificate_hash": "36bec3ea877176e703a05ee47bda4275192fa099"
+          }
+        },
+        {
+          "client_id": "161928800595-nvg8kpse1ill3i5as4rs8fkft32c8o08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHnNZ__hAm9hTUERw2qMHPJB7rAaDLjMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161928800595-nvg8kpse1ill3i5as4rs8fkft32c8o08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

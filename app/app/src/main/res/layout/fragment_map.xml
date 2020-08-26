@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/replacementFragmentId">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/TESTinvisibleRedMarker_PotOfChang"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible">
+        </Button>
+
+
+        <Button
+            android:id="@+id/TESTinvisibleRedMarker_PotOfCha"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+        </Button>
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <SearchView
+            android:id="@+id/searchCafeInput"
+            android:layout_width="343dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="17dp"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/cafe_infobox"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginBottom="0dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="275dp"
+                    android:layout_height="125dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/map_shopName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Dong Cha"
+                        android:textColor="#000000"
+                        android:textSize="20sp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/map_shopAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:text="935 W 30th St, Los Angeles California"
+                        android:textColor="#000000"
+                        android:textSize="14sp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/map_shopTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:text="11:00 am - 12:00 am "
+                        android:textColor="#000000"
+                        android:textSize="14sp">
+                    </TextView>
+
+                </LinearLayout>
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/map_shopImage"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="125dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:src="@drawable/honey_green_milk_tea">-->
+
+<!--                </ImageView>-->
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/view_cafe_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:text="View Cafe">
+            </Button>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/searchResults"
+            android:layout_width="437dp"
+            android:layout_height="550dp"
+            android:layout_above="@+id/map"
+            android:layout_marginBottom="-600dp"
+            android:visibility="gone"></ListView>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

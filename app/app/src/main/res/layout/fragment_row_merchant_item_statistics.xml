@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="240dp"
+                android:layout_height="90dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/merchantItemStatisticsRowItemName"
+                    android:text="Food Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/merchantItemStatisticsRowItemTotal"
+                        android:text="$ 1,000"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/merchantItemStatisticsRowSeparator"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="|"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/merchantItemStatisticsRowItemTotalOrders"
+                        android:layout_marginLeft="0dp"
+                        android:text="255 mg of caffeine"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/merchantItemStatisticsRowItemImage"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/honey_green_milk_tea">
+        </ImageView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
